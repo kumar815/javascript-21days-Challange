@@ -1,0 +1,51 @@
+.body {
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    background-color: rgba(197, 135, 135, 0.0); /* Background color with rgba values */
+    height: auto;
+    font-family: Urbanist;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin: 0; /* Added to reset default margin */
+}
+
+.tabs {
+    display: flex;
+    gap: 3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 2rem;
+    margin-left: 410px;
+}
+
+.menu_image {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images {
+    width: 450px; /* Adjust size as needed */
+    height: auto;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.6rem;
+}
+
+.images[data-category="all"],
+.images[data-category="animal"],
+.images[data-category="bird"],
+.images[data-category="nature"],
+.images[data-category="flower"] {
+    display: block;
+}
+
+.images[data-category="all"] {
+    display: none; /* Hide images with data-category="all" by default */
+}
